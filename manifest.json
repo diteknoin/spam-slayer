@@ -1,9 +1,10 @@
 {
   "name": "Ekstensi Pembasmi Spam",
   "description": "Hapus komentar spam di YouTube channel kamu",
-  "version": "1.0",
+  "version": "1.0.0",
   "manifest_version": 3,
   "permissions": ["identity", "storage"],
+  "host_permissions": ["https://www.googleapis.com/"],
   "oauth2": {
     "client_id": "61174805783-1kar2ommaovn3lv16qftudg661oisbpu.apps.googleusercontent.com",
     "scopes": ["https://www.googleapis.com/auth/youtube.force-ssl"]
@@ -13,6 +14,6 @@
   },
   "action": {
     "default_popup": "popup.html",
-    "default_icon": "eraser.png"
+    "default_icon": "eraser.png "
   }
 }
