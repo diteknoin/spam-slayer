@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ekstensi Pembasmi Spam</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 15px;
+        width: 280px;
+      }
+
+      h2 {
+        font-size: 16px;
+        margin-bottom: 12px;
+        color: #333;
+        text-align: center;
+      }
+
+      #scan {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background: #ff4b4b;
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+
+      #scan:hover {
+        background: #e13a3a;
+      }
+
+      #status {
+        margin-top: 15px;
+        font-size: 13px;
+        padding: 10px;
+        border-radius: 6px;
+        display: none;
+      }
+
+      .success {
+        background: #e6f9e6;
+        color: #2d7a2d;
+        border: 1px solid #b2e6b2;
+      }
+
+      .error {
+        background: #ffe6e6;
+        color: #a12d2d;
+        border: 1px solid #f2b2b2;
+      }
+
+      .loading {
+        background: #fff9e6;
+        color: #9a7a2d;
+        border: 1px solid #f2e6b2;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Ekstensi Pembasmi Spam</h2>
+    <button id="scan">🚫 Scan & Hapus Spam</button>
+    <div id="status"></div>
+    <script src="popup.js"></script>
+  </body>
+</html>
